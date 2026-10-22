@@ -1,0 +1,26 @@
+{
+  "name": "auto-call",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Logs into pump.fun with your wallet, watches for your buys, and writes a one-sentence call from the coin's tweet.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.12"
+  },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "check": "tsx src/index.ts --mint",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.1.0",
+    "bs58": "^6.0.0",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
